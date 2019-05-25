@@ -63,7 +63,7 @@ spec:
           readinessProbe:
             exec:
               command:
-              - podcli
+              - ./podcli
               - check
               - http
               - localhost:{{ .Values.service.containerPort }}/readyz
